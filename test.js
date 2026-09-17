@@ -1,0 +1,12 @@
+const fs = require('fs');
+const assert = require('assert');
+const html = fs.readFileSync('index.html', 'utf8');
+const js = fs.readFileSync('game.js', 'utf8');
+const css = fs.readFileSync('styles.css', 'utf8');
+assert(css.includes("assets/aarav-meera-reference.png"));
+assert(html.includes('game.js'));
+assert(js.includes('City of Echoes'));
+assert(js.includes('Kingdom of the Weaver'));
+assert(js.includes('Shringara'));
+assert(js.includes('Karuna'));
+console.log('PASS: core files, reference asset path, timelines, and Rasa markers verified.');

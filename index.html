@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anantha — The Fate Between Lives</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">vAIvedha Studios • Vertical Slice</p>
+        <h1>ANANTHA</h1>
+        <p class="tagline">Across a thousand lives, he finds her. Across a thousand worlds, he loses her.</p>
+        <button id="startBtn" class="primary">Begin the First Echo</button>
+      </div>
+    </section>
+
+    <section class="hud" aria-live="polite">
+      <div><span>Timeline</span><strong id="timeline">City of Echoes</strong></div>
+      <div><span>Rasa</span><strong id="rasa">Shringara</strong></div>
+      <div><span>Memory</span><strong id="memory">0 / 3</strong></div>
+    </section>
+
+    <section class="play-area">
+      <div class="scene-card" id="sceneCard">
+        <p class="scene-label" id="sceneLabel">PROLOGUE</p>
+        <h2 id="sceneTitle">The First Meeting</h2>
+        <p id="sceneText">A familiar road waits beneath the evening sky. Something in the air feels remembered, though Aarav cannot say from which life.</p>
+        <div class="choices" id="choices">
+          <button data-action="explore">Explore the road</button>
+          <button data-action="remember">Search for a memory</button>
+        </div>
+      </div>
+
+      <aside class="log-card">
+        <h3>Ambient Conversation</h3>
+        <p id="dialogue">Aarav: “I remember this road… but not from this life.”</p>
+        <p class="hint">Dialogue continues without pausing movement. Choose actions to advance the prototype.</p>
+      </aside>
+    </section>
+
+    <section class="systems">
+      <article><h3>Playable Modes</h3><p>Exploration • Racing • Combat • Puzzle • Horror</p></article>
+      <article><h3>Emotional Engine</h3><p>Nine Rasas • Dynamic music cues • Context dialogue</p></article>
+      <article><h3>Reference Integrity</h3><p>The uploaded couple image is preserved as the sole character reference asset.</p></article>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

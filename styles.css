@@ -1,0 +1,27 @@
+:root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #070b14; color: #f8f1df; }
+button { font: inherit; cursor: pointer; }
+.game-shell { max-width: 1180px; margin: auto; padding: 18px; }
+.hero { min-height: 470px; border: 1px solid #6e5b35; border-radius: 22px; overflow: hidden; position: relative; display: flex; align-items: end; background: url('assets/aarav-meera-reference.png') center/cover; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4,8,16,.92), rgba(4,8,16,.25), rgba(4,8,16,.12)); }
+.hero-content { position: relative; max-width: 620px; padding: 42px; }
+.eyebrow, .scene-label { color: #e6bb69; letter-spacing: .16em; text-transform: uppercase; font-size: .75rem; }
+h1 { font-size: clamp(3.4rem, 10vw, 8rem); line-height: .9; margin: 12px 0; letter-spacing: .08em; }
+.tagline { font-size: 1.15rem; line-height: 1.6; color: #e6ded0; }
+button { border: 1px solid #80662f; background: #171d2d; color: #fff6e5; border-radius: 999px; padding: 12px 18px; transition: transform .15s, background .15s; }
+button:hover { transform: translateY(-2px); background: #292f45; }
+.primary { background: #c18b37; color: #120d08; border-color: #e8c77e; font-weight: 700; }
+.hud, .play-area, .systems { display: grid; gap: 14px; margin-top: 16px; }
+.hud { grid-template-columns: repeat(3, 1fr); }
+.hud > div, .scene-card, .log-card, .systems article { background: #101827; border: 1px solid #29364e; border-radius: 16px; padding: 20px; }
+.hud span { display: block; color: #8fa0ba; font-size: .8rem; margin-bottom: 5px; }
+.play-area { grid-template-columns: 1.6fr 1fr; }
+.scene-card { min-height: 270px; }
+h2 { font-size: 2rem; margin: 6px 0 12px; }
+h3 { margin-top: 0; }
+.scene-card p, .log-card p, .systems p { color: #bdc8d8; line-height: 1.6; }
+.choices { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.hint { font-size: .85rem; color: #7f8ba0 !important; }
+.systems { grid-template-columns: repeat(3, 1fr); margin-bottom: 18px; }
+@media (max-width: 760px) { .hero-content { padding: 26px; } .hud, .play-area, .systems { grid-template-columns: 1fr; } .hero { min-height: 540px; } }
