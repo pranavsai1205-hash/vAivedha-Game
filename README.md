@@ -1,26 +1,34 @@
-# ANANTHA — The Fate Between Lives
+# ANANTHA: Fate Between Lives — Godot 4 Game Engine Prototype
 
-A small, browser-playable vertical slice for the Anantha game concept.
+This is a **real Godot 4 project**, not only a dashboard. It contains a playable 2D vertical slice with:
 
-## Reference rule
-
-The supplied couple image is included at `assets/aarav-meera-reference.png` and is used as the sole visual reference asset in this prototype. No substitute character image is introduced.
+- WASD / Arrow-key movement
+- Memory fragment collection
+- Ambient narrative dialogue
+- Recurring Meera echo encounter
+- Timeline switching across five worlds
+- Rasa labels for each world
+- Reset and interaction controls
+- Uploaded reference image stored at `assets/reference_couple.png`
 
 ## Run locally
 
-Open `index.html` in a modern browser. No build step or external dependency is required.
+1. Install Godot 4.x from https://godotengine.org/download/
+2. Open Godot Project Manager.
+3. Click **Import** and select this folder's `project.godot`.
+4. Press **F6** or **F5**.
 
-## Included
+## Controls
 
-- Cinematic landing screen using the uploaded reference image
-- Timeline / Rasa / memory HUD
-- Ambient conversation panel
-- Choice-driven prototype loop
-- Initial transitions from City of Echoes to Kingdom of the Weaver
+- `WASD` or arrow keys: move Aarav
+- `E` or `Space`: interact
+- `T`: shift timeline
+- `R`: reset current timeline
 
-## Next production steps
+## GitHub upload
 
-1. Replace placeholder scene cards with engine-authored levels.
-2. Add original audio and voice assets.
-3. Implement real movement, racing, combat, puzzle, horror, and exploration modules.
-4. Add save/load, accessibility, localization, and automated gameplay tests.
+Create a repository named `anantha-fate-between-lives`, then upload the entire folder contents (not just `index.html`).
+
+## Important
+
+The prototype uses the uploaded couple image as a bundled reference asset. The drawn gameplay characters are placeholder vector sprites for this engine test; the next production stage should replace them with rigged 2D/3D assets derived from the uploaded reference image.
